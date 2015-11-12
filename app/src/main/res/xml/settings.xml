@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="General">
+        <EditTextPreference
+            android:title="Search Radius (m)"
+            android:key="radius"
+            android:defaultValue="2000"
+            android:inputType="text"
+            android:singleLine="true"/>
+        <SwitchPreference
+            android:title="Vibrate Feedback"
+            android:key="vibrate"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="About">
+        <Preference
+            android:title="Version"
+            android:summary="1.4"/>
+        <Preference
+            android:title="Rate"
+            android:key="prefRate"/>
+        <Preference
+            android:title="Share"
+            android:key="prefShare"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

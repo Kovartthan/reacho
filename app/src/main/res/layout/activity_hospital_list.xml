@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar">
+    </include>
+
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  List view -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+<android.support.design.widget.FloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_show_map"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="5dp"
+    android:src="@drawable/ic_action_map"
+    app:backgroundTint="@color/accentColor"
+    app:elevation="6dp"/>
+
+</RelativeLayout>

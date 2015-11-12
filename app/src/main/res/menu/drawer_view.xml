@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/share_menu"
+            android:icon="@drawable/share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/review_menu"
+            android:icon="@drawable/rate"
+            android:title="@string/rate" />
+        <item
+            android:id="@+id/settings_menu"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/info_menu"
+            android:icon="@drawable/info"
+            android:title="@string/about" />
+    </group>
+</menu>
